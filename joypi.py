@@ -116,8 +116,32 @@ while done==False:
     fedge = GPIO.input(7)
     bedge = GPIO.input(13)
     #Start Writing Yout Code From Here
-    
-    if (joystick.get_axis(1) < -0.5 and joystick.get_axis(0) < -0.5): #Forward_Left
+
+    if (fedge == 0 and bedge == 0):
+              nutral()
+
+    elif (fedge == 0):
+              if (joystick.get_axis(1) > 0.5 and joystick.get_axis(0) < -0.5): #Backward_Left
+                   backward_left()
+              elif (joystick.get_axis(1) > 0.5 and joystick.get_axis(0) > 0.5): #Backward_Right
+                   backward_right()
+              elif (joystick.get_axis(1) > 0.5): #backward
+                   backward()
+              else:
+                   nutral()
+
+    elif (bedge == 0):
+              if (joystick.get_axis(1) < -0.5 and joystick.get_axis(0) < -0.5): #Forward_Left
+                   forward_left()
+              elif (joystick.get_axis(1) < -0.5 and joystick.get_axis(0) > 0.5): #Forward_Right
+                   forward_right()
+              elif (joystick.get_axis(1) < -0.5): #Forward
+                   forward()
+              else:
+                   nutral()
+
+
+    elif (joystick.get_axis(1) < -0.5 and joystick.get_axis(0) < -0.5): #Forward_Left
               forward_left()
     elif (joystick.get_axis(1) < -0.5 and joystick.get_axis(0) > 0.5): #Forward_Right
                 forward_right()
@@ -138,7 +162,7 @@ while done==False:
 
 
 
-    time.sleep(0.01)  #refresh rate 
+    time.sleep(0.05)  #refresh rate 
     # ALL CODE SHOULD GO ABOVE THIS COMMENT
     
 # Use Ctrl+C to quit.
