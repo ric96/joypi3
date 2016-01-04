@@ -83,7 +83,7 @@ def nutral():
     GPIO.output(15, False)
 ########################## Movement Definitions END ########################
 
-GPIO.output(18, True) #Status-LED-On
+#GPIO.output(18, True) #Status-LED-On
 def sigint_handler(signum, frame): #Catching Ctrl+c
     #GPIO.output(18, False) #Status-LED-Off
     pygame.quit()
