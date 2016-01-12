@@ -91,7 +91,7 @@ def sigint_handler(signum, frame): #Catching Ctrl+c
     pygame.quit()
     sys.exit(0)
 signal.signal(signal.SIGINT, sigint_handler)
-if (mc.get("d1") == "NONE")
+if (mc.get("d1") == "None")
     pygame.quit()
 # -------- Main Program Loop -----------
 while done==False:
