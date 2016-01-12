@@ -3,6 +3,8 @@ import signal
 import pygame
 import sys
 import RPi.GPIO as GPIO
+import memcache
+mc = memcache.Client(['127.0.0.1:11211'], debug=0)
 # The following is an example code written to controll the l298n motor contoller
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11, GPIO.OUT) #input-1
@@ -89,6 +91,8 @@ def sigint_handler(signum, frame): #Catching Ctrl+c
     pygame.quit()
     sys.exit(0)
 signal.signal(signal.SIGINT, sigint_handler)
+if (mc.get("d1") == "NONE")
+    pygame.quit()
 # -------- Main Program Loop -----------
 while done==False:
     # EVENT PROCESSING STEP
