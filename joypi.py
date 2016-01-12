@@ -91,7 +91,8 @@ def sigint_handler(signum, frame): #Catching Ctrl+c
     pygame.quit()
     sys.exit(0)
 signal.signal(signal.SIGINT, sigint_handler)
-if (mc.get("d1") == "None"):
+check = mc.get("d1")
+if check == "None":
     print "sensor script not initialized properly"
     exit(0)
 # -------- Main Program Loop -----------
