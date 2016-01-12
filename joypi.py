@@ -13,7 +13,6 @@ GPIO.setup(15, GPIO.OUT) #input-3
 GPIO.setup(16, GPIO.OUT) #input-4
 GPIO.setup(7, GPIO.IN) #Front Edge
 GPIO.setup(13, GPIO.IN) #Back Edge
-print 'Test', mc.get("d1")
   
 pygame.init()
  
@@ -93,7 +92,8 @@ def sigint_handler(signum, frame): #Catching Ctrl+c
     sys.exit(0)
 signal.signal(signal.SIGINT, sigint_handler)
 if (mc.get("d1") == "None"):
-    pygame.quit()
+    print "sensor script not initialized properly"
+    exit(0)
 # -------- Main Program Loop -----------
 while done==False:
     # EVENT PROCESSING STEP
