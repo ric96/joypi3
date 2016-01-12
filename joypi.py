@@ -13,6 +13,7 @@ GPIO.setup(15, GPIO.OUT) #input-3
 GPIO.setup(16, GPIO.OUT) #input-4
 GPIO.setup(7, GPIO.IN) #Front Edge
 GPIO.setup(13, GPIO.IN) #Back Edge
+print 'Test', mc.get("d1")
   
 pygame.init()
  
