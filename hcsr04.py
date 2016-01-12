@@ -1,4 +1,4 @@
-!/usr/bin/env python
+#!/usr/bin/env python
 #
 # HC-SR04 interface code for the Raspberry Pi
 #
