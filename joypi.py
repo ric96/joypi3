@@ -14,7 +14,7 @@ GPIO.setup(16, GPIO.OUT) #input-4
 GPIO.setup(7, GPIO.IN) #Front Edge
 GPIO.setup(13, GPIO.IN) #Back Edge
 check = mc.get("d1")
-if check in "None":
+if check == 10:
     print "sensor script not initialized properly"
     exit(0)
 pygame.init()
