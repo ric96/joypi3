@@ -127,13 +127,13 @@ while done==False:
     print fc
     print bc
      
-    if ((fc <= 10 or fr <= 10 or fl <= 10) and (bc <= 10 or br <=10 or bl <=10)):
-              if (joystick.get_axis(2) < -0.5): #Left
-                   left()
-              elif (joystick.get_axis(2) > 0.5): #Right
-                   right()
-              else:
-                   nutral()
+    #if ((fc <= 10 or fr <= 10 or fl <= 10) and (bc <= 10 or br <=10 or bl <=10)):
+     #         if (joystick.get_axis(2) < -0.5): #Left
+      #             left()
+       #       elif (joystick.get_axis(2) > 0.5): #Right
+        #           right()
+         #     else:
+          #         nutral()
 
     elif (fedge == 0 and bedge == 0):
               nutral()
