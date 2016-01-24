@@ -13,7 +13,7 @@ GPIO.setup(15, GPIO.OUT) #input-3
 GPIO.setup(16, GPIO.OUT) #input-4
 GPIO.setup(7, GPIO.IN) #Front Edge
 GPIO.setup(13, GPIO.IN) #Back Edge
- 
+pygame.init()
 done = False
 # Initialize the joysticks
 pygame.joystick.init()
@@ -124,6 +124,8 @@ while done==False:
     bl = mc.get("d6")
     bc = mc.get("d5")
     br = mc.get("d4")
+    print fc
+    print bc
      
     if ((fc <= 10 or fr <= 10 or fl <= 10) and (bc <= 10 or br <=10 or bl <=10)):
               if (joystick.get_axis(2) < -0.5): #Left
@@ -159,7 +161,7 @@ while done==False:
 
     else:
               if (fc <= 10):
-                       elif (joystick.get_axis(1) > 0.5 and joystick.get_axis(2) < -0.5): #Backward_Left
+                       if (joystick.get_axis(1) > 0.5 and joystick.get_axis(2) < -0.5): #Backward_Left
                             backward_left()
                        elif (joystick.get_axis(1) > 0.5 and joystick.get_axis(2) > 0.5): #Backward_Right
                             backward_right()
