@@ -161,7 +161,7 @@ while done==False:
 
     else:
               if (fc <= 10):
-                       elif (joystick.get_axis(1) > 0.5 and joystick.get_axis(2) < -0.5): #Backward_Left
+                       if (joystick.get_axis(1) > 0.5 and joystick.get_axis(2) < -0.5): #Backward_Left
                             backward_left()
                        elif (joystick.get_axis(1) > 0.5 and joystick.get_axis(2) > 0.5): #Backward_Right
                             backward_right()
