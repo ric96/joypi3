@@ -124,6 +124,8 @@ while done==False:
     bl = mc.get("d6")
     bc = mc.get("d5")
     br = mc.get("d4")
+    print fc
+    print bc
      
     if ((fc <= 10 or fr <= 10 or fl <= 10) and (bc <= 10 or br <=10 or bl <=10)):
               if (joystick.get_axis(2) < -0.5): #Left
