@@ -135,7 +135,7 @@ while done==False:
          #     else:
           #         nutral()
 
-    elif (fedge == 0 and bedge == 0):
+    if (fedge == 0 and bedge == 0):
               nutral()
 
     elif (fedge == 0):
