@@ -34,7 +34,7 @@ def readDistance2(_trig, _echo):
       time.sleep(0.001)
       tim = tim+1
       if tim > 50:
-         return 99999
+         return 9999
    return _time
 
 pi = pigpio.pi('localhost',1234)
