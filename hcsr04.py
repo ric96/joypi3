@@ -33,7 +33,7 @@ def readDistance2(_trig, _echo):
    while not _done:
       time.sleep(0.001)
       tim = tim+1
-      if tim > 50:
+      if tim > 5:
          return 2900
    return _time
 
