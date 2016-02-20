@@ -121,8 +121,8 @@ def main():
     bl = mc.get("d6")
     bc = mc.get("d5")
     br = mc.get("d4")
-    f = "FL:",round(fl)," C:",round(fc)," R:",round(fr)
-    b = "BL:",round(bl)," C:",round(bc)," R:",round(br)
+    f = "FL:"+round(fl)+" C:"+round(fc)+" R:"+round(fr)
+    b = "BL:"+round(bl)+" C:"+round(bc)+" R:"+round(br)
     # Send some test
     lcd_string(f,LCD_LINE_1)
     lcd_string(b,LCD_LINE_2)
