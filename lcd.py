@@ -112,12 +112,12 @@ def main():
 
   # Initialise display
   lcd_init()
-  i = 0
-  while i < 30:
+  i = 30
+  while i > 0:
     lcd_string("    WELCOME     ",LCD_LINE_1)
     time.sleep(1)
     lcd_string("wait for"+str(i)+"sec",LCD_LINE_2)
-    i += 1
+    i -= 1
     
 
   while True:
