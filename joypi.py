@@ -172,7 +172,7 @@ while done==False:
                        elif (joystick.get_axis(2) > 0.5): #Right
                             right()
                        else:
-                            nutral()      
+                            backward()      
 
               elif (bc <= 10):
                        if (joystick.get_axis(1) < -0.5 and joystick.get_axis(2) < -0.5): #Forward_Left
@@ -186,7 +186,7 @@ while done==False:
                        elif (joystick.get_axis(2) > 0.5): #Right
                             right()
                        else:
-                            nutral()   
+                            forward()   
               elif (fr <= 10):
                        if (joystick.get_axis(1) < -0.5 and joystick.get_axis(2) < -0.5): #Forward_Left
                             forward_left()
