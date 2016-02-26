@@ -67,7 +67,7 @@ if __name__ == "__main__":
       mc.set("d4",(readDistance2(7,5)/58))
       mc.set("d5",(readDistance2(6,12)/58))
       mc.set("d6",(readDistance2(19,16)/58))
-      time.sleep(0.2)
+      time.sleep(0.1)
 
 #   my_echo1.cancel()
 #   my_echo0.cancel()
