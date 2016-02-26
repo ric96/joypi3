@@ -17,7 +17,7 @@ pygame.init()
 done = False
 # Initialize the joysticks
 pygame.joystick.init()
-
+time.sleep(30)
 ################ Movement Definitions BEGIN #######################
 def forward_left():
     print "FL"
